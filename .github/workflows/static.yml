@@ -19,3 +19,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # Đường dẫn chứa tệp HTML của bạn
           publish_branch: gh-pages  # Nhánh đích để đẩy
+          force: true  # Thêm tùy chọn force
