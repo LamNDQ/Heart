@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # hoặc tên nhánh bạn đang sử dụng
+      - main  # Hoặc tên nhánh mà bạn đang sử dụng
 
 jobs:
   deploy:
@@ -17,5 +17,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./index.html
-          publish_branch: main
+          publish_dir: ./  # Đường dẫn chứa tệp HTML của bạn
+          publish_branch: gh-pages  # Nhánh đích để đẩy
